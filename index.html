@@ -331,13 +331,12 @@
 <li>EventLoopGroup</li>
 <li>ServerBootstrap</li>
 <li>ChannelInboundHandler</li>
-<li><p>ChannelOutboundHandler </p>
-<p>Netty中，可以注册多个handler。ChannelInboundHandler按照注册的先后顺序执行；ChannelOutboundHandler按照注册的先后顺序逆序执行</p>
-<p>在netty4.0.X版本中，ChannelInboundHandlerAdapter是普通类，而SimpleChannelInboundHandler<t>是抽象类，继承SimpleChannelInboundHandler的类必须实现channelRead0方法。</t></p>
-<p>SimpleChannelInboundHandler<t>有一个重要特性，就是<strong>消息被读取后，会自动释放资源</strong>，常见的IM聊天软件的机制就类似这种。而且SimpleChannelInboundHandler类是继承了ChannelInboundHandlerAdapter类，重写了channelRead()方法，并新增抽象类。</t></p>
-<p>绝大部分场景都可以用ChannelInboundHandlerAdapter来处理。</p>
-</li>
+<li>ChannelOutboundHandler </li>
 </ul>
+<p>  Netty中，可以注册多个handler。ChannelInboundHandler按照注册的先后顺序执行；ChannelOutboundHandler按照注册的先后顺序逆序执行</p>
+<p>  在netty4.0.X版本中，ChannelInboundHandlerAdapter是普通类，而SimpleChannelInboundHandler<t>是抽象类，继承SimpleChannelInboundHandler的类必须实现channelRead0方法。</t></p>
+<p>  SimpleChannelInboundHandler<t>有一个重要特性，就是<strong>消息被读取后，会自动释放资源</strong>，常见的IM聊天软件的机制就类似这种。而且SimpleChannelInboundHandler类是继承了ChannelInboundHandlerAdapter类，重写了channelRead()方法，并新增抽象类。</t></p>
+<p> 绝大部分场景都可以用ChannelInboundHandlerAdapter来处理。</p>
 <h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><a href="http://blog.csdn.net/bbaiggey/article/details/51812122" target="_blank" rel="external">http://blog.csdn.net/bbaiggey/article/details/51812122</a><br><a href="http://www.infoq.com/cn/articles/netty-version-upgrade-history-thread-part/" target="_blank" rel="external">http://www.infoq.com/cn/articles/netty-version-upgrade-history-thread-part/</a></p>
 
           

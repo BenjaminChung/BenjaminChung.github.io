@@ -104,7 +104,7 @@ ServerB">
 EventLoopGroup
 ServerB">
 <meta property="og:image" content="http://netty.io/images/components.png">
-<meta property="og:updated_time" content="2017-04-03T08:43:02.000Z">
+<meta property="og:updated_time" content="2017-04-03T08:44:40.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Netty札记">
 <meta name="twitter:description" content="Netty札记简介Netty是一个基于Java NIO的开源框架。Netty提供异步的、事件驱动的网络应用程序框架和工具，用以快速开发高性能，高可靠性的网络服务器和客户端程序。Netty简化和流线化了网络应用的编程开发过程，例如，TCP和UDP的socket服务开发。现在业内主流是4.x版本，所以以下所有内容都是基于4.x版本的。
@@ -345,13 +345,12 @@ ServerB">
 <li>EventLoopGroup</li>
 <li>ServerBootstrap</li>
 <li>ChannelInboundHandler</li>
-<li><p>ChannelOutboundHandler </p>
-<p>Netty中，可以注册多个handler。ChannelInboundHandler按照注册的先后顺序执行；ChannelOutboundHandler按照注册的先后顺序逆序执行</p>
-<p>在netty4.0.X版本中，ChannelInboundHandlerAdapter是普通类，而SimpleChannelInboundHandler<t>是抽象类，继承SimpleChannelInboundHandler的类必须实现channelRead0方法。</t></p>
-<p>SimpleChannelInboundHandler<t>有一个重要特性，就是<strong>消息被读取后，会自动释放资源</strong>，常见的IM聊天软件的机制就类似这种。而且SimpleChannelInboundHandler类是继承了ChannelInboundHandlerAdapter类，重写了channelRead()方法，并新增抽象类。</t></p>
-<p>绝大部分场景都可以用ChannelInboundHandlerAdapter来处理。</p>
-</li>
+<li>ChannelOutboundHandler </li>
 </ul>
+<p>  Netty中，可以注册多个handler。ChannelInboundHandler按照注册的先后顺序执行；ChannelOutboundHandler按照注册的先后顺序逆序执行</p>
+<p>  在netty4.0.X版本中，ChannelInboundHandlerAdapter是普通类，而SimpleChannelInboundHandler<t>是抽象类，继承SimpleChannelInboundHandler的类必须实现channelRead0方法。</t></p>
+<p>  SimpleChannelInboundHandler<t>有一个重要特性，就是<strong>消息被读取后，会自动释放资源</strong>，常见的IM聊天软件的机制就类似这种。而且SimpleChannelInboundHandler类是继承了ChannelInboundHandlerAdapter类，重写了channelRead()方法，并新增抽象类。</t></p>
+<p> 绝大部分场景都可以用ChannelInboundHandlerAdapter来处理。</p>
 <h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><a href="http://blog.csdn.net/bbaiggey/article/details/51812122" target="_blank" rel="external">http://blog.csdn.net/bbaiggey/article/details/51812122</a><br><a href="http://www.infoq.com/cn/articles/netty-version-upgrade-history-thread-part/" target="_blank" rel="external">http://www.infoq.com/cn/articles/netty-version-upgrade-history-thread-part/</a></p>
 
       
