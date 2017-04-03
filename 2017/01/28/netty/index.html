@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hexo,安装," />
+  <meta name="keywords" content="netty,札记," />
 
 
 
@@ -87,42 +87,33 @@
 
 
 
-<meta name="description" content="安装Homebrew1ruby -e &amp;quot;$(curl --insecure -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;
-成功会有如下显示
+<meta name="description" content="Netty札记简介Netty是一个基于Java NIO的开源框架。Netty提供异步的、事件驱动的网络应用程序框架和工具，用以快速开发高性能，高可靠性的网络服务器和客户端程序。Netty简化和流线化了网络应用的编程开发过程，例如，TCP和UDP的socket服务开发。现在业内主流是4.x版本，所以以下所有内容都是基于4.x版本的。
+体系结构图
 
-安装node1brew install node
-测试是否安装成功
-12node －vnpm -v
-安装hexo
-hexo
- 1npm">
+核心类
+EventLoopGroup
+ServerB">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo 指令边搭边记">
-<meta property="og:url" content="http://yoursite.com/2016/09/28/hexo-指令边搭边记/index.html">
+<meta property="og:title" content="Netty札记">
+<meta property="og:url" content="http://yoursite.com/2017/01/28/netty/index.html">
 <meta property="og:site_name" content="Benjamin's Blog">
-<meta property="og:description" content="安装Homebrew1ruby -e &amp;quot;$(curl --insecure -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;
-成功会有如下显示
+<meta property="og:description" content="Netty札记简介Netty是一个基于Java NIO的开源框架。Netty提供异步的、事件驱动的网络应用程序框架和工具，用以快速开发高性能，高可靠性的网络服务器和客户端程序。Netty简化和流线化了网络应用的编程开发过程，例如，TCP和UDP的socket服务开发。现在业内主流是4.x版本，所以以下所有内容都是基于4.x版本的。
+体系结构图
 
-安装node1brew install node
-测试是否安装成功
-12node －vnpm -v
-安装hexo
-hexo
- 1npm">
-<meta property="og:image" content="http://on8ymcxrj.bkt.clouddn.com/brewinstall.png?imageView/2/w/300/h/400">
-<meta property="og:updated_time" content="2017-04-02T02:27:34.000Z">
+核心类
+EventLoopGroup
+ServerB">
+<meta property="og:image" content="http://netty.io/images/components.png">
+<meta property="og:updated_time" content="2017-04-03T08:39:57.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo 指令边搭边记">
-<meta name="twitter:description" content="安装Homebrew1ruby -e &amp;quot;$(curl --insecure -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&amp;quot;
-成功会有如下显示
+<meta name="twitter:title" content="Netty札记">
+<meta name="twitter:description" content="Netty札记简介Netty是一个基于Java NIO的开源框架。Netty提供异步的、事件驱动的网络应用程序框架和工具，用以快速开发高性能，高可靠性的网络服务器和客户端程序。Netty简化和流线化了网络应用的编程开发过程，例如，TCP和UDP的socket服务开发。现在业内主流是4.x版本，所以以下所有内容都是基于4.x版本的。
+体系结构图
 
-安装node1brew install node
-测试是否安装成功
-12node －vnpm -v
-安装hexo
-hexo
- 1npm">
-<meta name="twitter:image" content="http://on8ymcxrj.bkt.clouddn.com/brewinstall.png?imageView/2/w/300/h/400">
+核心类
+EventLoopGroup
+ServerB">
+<meta name="twitter:image" content="http://netty.io/images/components.png">
 
 
 
@@ -150,13 +141,13 @@ hexo
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/09/28/hexo-指令边搭边记/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/01/28/netty/"/>
 
 
 
 
 
-  <title> hexo 指令边搭边记 | Benjamin's Blog </title>
+  <title> Netty札记 | Benjamin's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -275,7 +266,7 @@ hexo
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/09/28/hexo-指令边搭边记/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/28/netty/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Benjamin Chung">
@@ -296,7 +287,7 @@ hexo
             
             
               
-                hexo 指令边搭边记
+                Netty札记
               
             
           </h1>
@@ -311,8 +302,8 @@ hexo
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-09-28T19:20:03+08:00">
-                2016-09-28
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-01-28T20:20:03+08:00">
+                2017-01-28
               </time>
             
 
@@ -347,27 +338,21 @@ hexo
       
 
       
-        <h2 id="安装Homebrew"><a href="#安装Homebrew" class="headerlink" title="安装Homebrew"></a>安装Homebrew</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ruby -e &quot;$(curl --insecure -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</div></pre></td></tr></table></figure>
-<p>成功会有如下显示</p>
-<p><img src="http://on8ymcxrj.bkt.clouddn.com/brewinstall.png?imageView/2/w/300/h/400" alt="success"></p>
-<h2 id="安装node"><a href="#安装node" class="headerlink" title="安装node"></a>安装node</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew install node</div></pre></td></tr></table></figure>
-<p>测试是否安装成功</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">node －v</div><div class="line">npm -v</div></pre></td></tr></table></figure>
-<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><ul>
-<li><p>hexo</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo -g --no-optional</div></pre></td></tr></table></figure>
-<p>－g 代表安装全局有效 不设置此参数，则对当前执行命令的目录有效</p>
-<p>–no-optional  设置之后，以后执行hexo命令则不会报错</p>
-</li>
-<li><p>安装部署hexo-deployer-git插件</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
+        <h2 id="Netty札记"><a href="#Netty札记" class="headerlink" title="Netty札记"></a>Netty札记</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>Netty是一个基于Java NIO的开源框架。Netty提供异步的、事件驱动的网络应用程序框架和工具，用以快速开发高性能，高可靠性的网络服务器和客户端程序。Netty简化和流线化了网络应用的编程开发过程，例如，TCP和UDP的socket服务开发。现在业内主流是4.x版本，所以以下所有内容都是基于4.x版本的。</p>
+<p><strong>体系结构图</strong></p>
+<p><img src="http://netty.io/images/components.png" alt=""></p>
+<h3 id="核心类"><a href="#核心类" class="headerlink" title="核心类"></a>核心类</h3><ul>
+<li>EventLoopGroup</li>
+<li>ServerBootstrap</li>
+<li>ChannelInboundHandler</li>
+<li><p>ChannelOutboundHandler </p>
+<p>Netty中，可以注册多个handler。ChannelInboundHandler按照注册的先后顺序执行；ChannelOutboundHandler按照注册的先后顺序逆序执行</p>
+<p>在netty4.0.X版本中，ChannelInboundHandlerAdapter是普通类，而SimpleChannelInboundHandler<t>是抽象类，<br>继承SimpleChannelInboundHandler的类必须实现channelRead0方法。</t></p>
+<p>SimpleChannelInboundHandler<t>有一个重要特性，就是<strong>消息被读取后，会自动释放资源</strong>，常见的IM聊天软件的机制就类似这种。而且SimpleChannelInboundHandler类是继承了ChannelInboundHandlerAdapter类，重写了channelRead()方法，并新增抽象类。</t></p>
+<p>绝大部分场景都可以用ChannelInboundHandlerAdapter来处理。</p>
 </li>
 </ul>
-<hr>
-<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><ul>
-<li>百度经验  <a href="http://jingyan.baidu.com/article/fec7a1e5ec30341190b4e7e5.html" target="_blank" rel="external">http://jingyan.baidu.com/article/fec7a1e5ec30341190b4e7e5.html</a></li>
-<li>图片大小处理  <a href="http://developer.qiniu.com/dora/manual/1204/processing-mechanism" target="_blank" rel="external">http://developer.qiniu.com/dora/manual/1204/processing-mechanism</a></li>
-</ul>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><a href="http://blog.csdn.net/bbaiggey/article/details/51812122" target="_blank" rel="external">http://blog.csdn.net/bbaiggey/article/details/51812122</a><br><a href="http://www.infoq.com/cn/articles/netty-version-upgrade-history-thread-part/" target="_blank" rel="external">http://www.infoq.com/cn/articles/netty-version-upgrade-history-thread-part/</a></p>
 
       
     </div>
@@ -397,9 +382,9 @@ hexo
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag"># hexo</a>
+            <a href="/tags/netty/" rel="tag"># netty</a>
           
-            <a href="/tags/安装/" rel="tag"># 安装</a>
+            <a href="/tags/札记/" rel="tag"># 札记</a>
           
         </div>
       
@@ -412,15 +397,15 @@ hexo
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/01/20/zookeeper札记/" rel="next" title="Zookeeper札记">
+                <i class="fa fa-chevron-left"></i> Zookeeper札记
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/12/10/MacIDE常用快捷键 CheatSheet/" rel="prev" title="Mac IDE 常用快捷键 CheatSheet">
-                Mac IDE 常用快捷键 CheatSheet <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -549,7 +534,7 @@ hexo
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Homebrew"><span class="nav-number">1.</span> <span class="nav-text">安装Homebrew</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装node"><span class="nav-number">2.</span> <span class="nav-text">安装node</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装hexo"><span class="nav-number">2.1.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考资料"><span class="nav-number">2.2.</span> <span class="nav-text">参考资料</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Netty札记"><span class="nav-number">1.</span> <span class="nav-text">Netty札记</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#简介"><span class="nav-number">1.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#核心类"><span class="nav-number">1.2.</span> <span class="nav-text">核心类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考"><span class="nav-number">1.3.</span> <span class="nav-text">参考</span></a></li></ol></li></ol></div>
             
 
           </div>
